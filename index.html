@@ -9,6 +9,7 @@
     
     <body>
     <div class="container">
+    
     <header>
     <input type="text" 
     name="project-name"       
@@ -18,7 +19,7 @@
     <input type="text" 
     name="project-type"       
     id="project-type"
-    placeholder="Type of Product">
+    placeholder="Type of Project">
     </header>
     
     <section class="search">
@@ -33,34 +34,42 @@
         
         <select class="department"
         placeholder="Department">
+            <option disabled selected>
+            Department
+            </option>
             <option value="industrial">
             Industrial and Scientific
             </option>
         </select>
         
         <input type="submit"
+        value="Search"
         name="search-submit"
         id="search-submit">
         
-        </form>    
-        </section>
-        
-    <section class="search-results">
         <ul class="results-list"></ul>
-    </section> 
+        
+    </form>    
+    </section>
+        
+   
         
     <section class="define-parts">
-        
+    <form class="define-form">    
         <input type="text"
-        name="define-part"
-        id="define-part">
+        name="define-input"
+        id="define-input">
         
         <input type="submit"
-        name="define-part"
-        id="define-part"
+        name="define-submit"
+        id="define-submit"
         value="make">
-        
-        </section> 
+    
+    </form>
+    
+    <ul class="part-section"></ul>    
+    </section> 
+    
     </div>    
     
     </body>

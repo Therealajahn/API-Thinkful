@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Define Page</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet"
+    href="style.css">      
+    </head>
+    
+    <body>
+    <div class="container">
+    
+    <header>
+    <input type="text" 
+    name="project-name"       
+    id="project-name"
+    placeholder="Your Project">
+    
+    <input type="text" 
+    name="project-type"       
+    id="project-type"
+    placeholder="Type of Project">
+    </header>
+    
+    <section class="search">
+    <form class="search-form">
+        <input type="number"
+        name="results-num"
+        id="results-num">
+        
+        <input type="text"
+        name="parts-search"
+        id="parts-search">
+        
+        <select class="department"
+        placeholder="Department">
+            <option disabled selected>
+            Department
+            </option>
+            <option value="industrial">
+            Industrial and Scientific
+            </option>
+        </select>
+        
+        <input type="submit"
+        value="Search"
+        name="search-submit"
+        id="search-submit">
+        
+        <ul class="results-list"></ul>
+        
+    </form> 
+        
+    
+        <ul class="search-list">
+        <li class="list-one search-item" >
+            <div class="checkbox">
+                Checkbox
+            </div>
+            <div class="name">
+                Name
+            </div>
+            <div class="image">
+                Image
+            </div>
+            <div class="star-circle">
+            Star-Circle</div>
+        </li>
+            <li class="list-two search-item">
+           <div class="checkbox">
+                Checkbox
+            </div>
+            <div class="name">
+                Name
+            </div>
+            <div class="image">
+                Image
+            </div>
+            <div class="star-circle">
+            Star-Circle</div>
+        </li>
+            <li class="list-three search-item">
+            <div class="checkbox">
+                Checkbox
+            </div>
+            <div class="name">
+                Name
+            </div>
+            <div class="image">
+                Image
+            </div>
+            <div class="star-circle">
+            Star-Circle</div>
+        </li>
+            
+        </ul>
+        
+            
+    </section>
+        
+   
+        
+    <section class="define-parts">
+    <form class="define-form">    
+        <input type="text"
+        name="define-input"
+        id="define-input">
+        
+        <input type="submit"
+        name="define-submit"
+        id="define-submit"
+        value="make">
+    
+    </form>
+        <ul class="define-parts-list">
+            <li class="defined-part">
+                <div class="check-delete">
+                    <div class="mini-define-check"></div>
+                    <div class="delete"></div>
+                </div>
+                <div class="part-name"></div>
+                <div class="stars"></div>
+                <div class="part-amount"></div>
+                <div class="current-part-cost"></div>
+            </li>
+        </ul>
+    
+    <ul class="part-section"></ul>    
+    </section> 
+    
+    </div>    
+    
+    </body>
+</html>

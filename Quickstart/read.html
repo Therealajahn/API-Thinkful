@@ -110,7 +110,8 @@
         range: 'Sheet1!A1:D5',
               
         }).then(function(response) {
-           appendPre(response.result.values[0]);
+           
+           console.log(reponse.result.values); appendPre(response.result.values[0]);
            appendPre(response.result.values[1]);
           appendPre(response.result.values[2]);
 //          var range = response.result;

@@ -21,6 +21,7 @@ section{
  grid-column-gap: 3%;
  margin-top: 1.6vh;
  margin-left: 3.2%;
+ color: white;   
 }
 
 .part{
@@ -30,5 +31,35 @@ section{
     background-color:#b0b0b0;
 }
 
+.top {
+   display: grid;
+   grid-template-columns: 30% 70%;
+   grid-template-rows: 100%;   background-color:#333333;
+   border: 2px solid white;  
+}
+
+.check{
+    background-color: #8c8c8c;
+}
+
+.link {
+   background-color:#4a4a4a;
+   border: 2px solid white;    
+}
+
+.name {
+   background-color:#6b6b6b;
+   border: 2px solid white;  
+}
+
+.price {
+   background-color:#4a4a4a;
+   border: 2px solid white;  
+}
+
+.star-number {
+   background-color:#333333; 
+   border: 2px solid white; 
+}
 
 

@@ -11,6 +11,7 @@ function renderPart(){
     let part = `<section class='part'>
                 ${renderCheck()}
                 ${renderDeleteButton()}
+                ${renderSubmit()}
                 ${renderForm()}
                 ${renderStars()}
                 </section>`
@@ -22,6 +23,16 @@ function renderCheck(){
                 </div>`;
     return check;
 };
+
+function renderSubmit(){
+    let submit = `<div class='submit-left'>
+                     <h1 class='submit-left-text'>Submit</h1>
+                  </div>
+                  <div class='submit-right'>
+                     <h1 class='submit-right-text'>Submit</h1>
+                  </div>`
+    return submit;
+}
 
 //function addPriceToTotal(){
 //    

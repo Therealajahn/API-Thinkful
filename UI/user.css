@@ -29,6 +29,24 @@
     background-color: #8c8c8c;
     margin-bottom: -5vh;
 }
+/*SUBMIT*/
+.submit-right{
+    position: absolute;
+    height:68px;
+    width:2.5vw;
+    background-color: #d1d1d1;
+    margin-top: 33px;
+    margin-left: 27.45vw;
+}
+.submit-left{
+    position: absolute;
+    height:68px;
+    width:2.5vw;
+    background-color: #d1d1d1;
+    margin-top: 33px;
+    margin-left: vw;
+}
+/*INPUTS*/
 .inputs{
     margin-top: 20px;
 }

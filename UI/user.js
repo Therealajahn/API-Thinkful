@@ -1,33 +1,35 @@
-function renderBoxes() {
-    $(".section-a").html(`<section class="part one-a">
-            <div class="check one-a">
-                <div class="x-rect1 one-a"></div>
-                <div class="x-rect2 one-a"></div>
+function renderParts() {
+    store.partBoxes[0].forEach(part => {
+    $(".section-a").append(`<section class="part ${part}">
+            <div class="check ${part}">
+                <div class="x-rect1 ${part}"></div>
+                <div class="x-rect2 ${part}"></div>
             </div>
-            <div class="delete one-a">
-                <h1 class="delete-text one-a">
+            <div class="delete ${part}">
+                <h1 class="delete-text ${part}">
                     Delete    
                 </h1>
             </div>
         
-            <div class='submit-left one-a'>
-                     <h1 class='submit-left-text one-a'>Submit</h1>
+            <div class='submit-left ${part}'>
+                     <h1 class='submit-left-text ${part}'>Submit</h1>
                   </div>
-                  <div class='submit-right one-a'>
-                     <h1 class='submit-right-text one-a'>Submit</h1>
+                  <div class='submit-right ${part}'>
+                     <h1 class='submit-right-text ${part}'>Submit</h1>
                   </div>
             <form>
-                <input type="text" name="name" class="name one-a"
+                <input type="text" name="name" class="name ${part}"
          placeholder="NAME"><br>
-                <input type="text" name="price" class="price one-a"
+                <input type="text" name="price" class="price ${part}"
         placeholder="PRICE">
                 <br>
-                <input type="text" name="link" class="link one-a"
+                <input type="text" name="link" class="link ${part}"
         placeholder="LINK">
             </form>
-            <div class="stars one-a"></div>
+            <div class="stars ${part}"></div>
         </section>`)
+    });
 }
 
 
-$(renderBoxes());
+$(renderParts());

@@ -1,7 +1,11 @@
-let store = [
-    {name:"",price:"",link:""},
-    {name:"",price:"",link:""},
-    {name:"",price:"",link:""},
-]
+let store = {
+    partBoxes:[
+        ["one-a",
+        "two-a",
+        "three-a"]
+    ]
+}
+    
+
    
     

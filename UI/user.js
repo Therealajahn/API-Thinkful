@@ -1,3 +1,9 @@
+//render the three main sections
+//TODO: make all the parts smaller to fit the price and the update button
+fucntion renderSections(){
+    
+};
+
 function renderParts() {
     store.partBoxes[0].forEach(part => {
     $(".section-a").append(`<section class="part ${part}">
@@ -34,13 +40,20 @@ function renderParts() {
 //when submit button is pressed, if the part is selected,  
 function submitPressed() {
        
-}
+};
 
 //when a parts check box is clicked, the x appears in that check box, dissapearing from
 //the others
 function checkClicked() {
     
-}
+};
+
+//sum all the parts in the store.selectedPart object to get price
+function upDateTotal() {
+    
+};
+
+//render price at bottom of page
 
 
 $(renderParts());

@@ -3,7 +3,12 @@ let store = {
         ["one-a",
         "two-a",
         "three-a"]
-    ]
+    ],
+    selectedParts:{
+    partOne:"",
+    partTwo:"",
+    partThree:""
+    },
 }
     
 

@@ -31,5 +31,16 @@ function renderParts() {
     });
 }
 
+//when submit button is pressed, if the part is selected,  
+function submitPressed() {
+       
+}
+
+//when a parts check box is clicked, the x appears in that check box, dissapearing from
+//the others
+function checkClicked() {
+    
+}
+
 
 $(renderParts());

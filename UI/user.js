@@ -1,12 +1,23 @@
 //render the three main sections
 //TODO: make all the parts smaller to fit the price and the update button
-fucntion renderSections(){
+function renderSections(){
+   
+
+    store.sections.forEach((section,index) => {
     
+        
+        $("body").append(`<section class=${section}> 
+                            ${renderParts(section,index)}
+                         </section>`);
+        console.log(renderParts(section,index))
+    });
+
 };
 
-function renderParts() {
-    store.partBoxes[0].forEach(part => {
-    $(".section-a").append(`<section class="part ${part}">
+function renderParts(section, index) {
+    console.log("renderparts",section,index)
+    store.partBoxes[index].forEach(part => {
+    return (`<section class="part ${part}">
             <div class="check ${part}">
                 <div class="x-rect1 ${part}"></div>
                 <div class="x-rect2 ${part}"></div>
@@ -49,11 +60,15 @@ function checkClicked() {
 };
 
 //sum all the parts in the store.selectedPart object to get price
+//whenever a submit or the update button is clicked
 function upDateTotal() {
     
 };
 
 //render price at bottom of page
+function renderPrice(){
+    
+}
 
 
-$(renderParts());
+$(renderSections());

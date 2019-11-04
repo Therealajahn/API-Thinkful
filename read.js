@@ -1,5 +1,6 @@
  // Client ID and API key from the Developer Console
-      var CLIENT_ID = '496411288280-5k6m4o36m693kfir0i8q9phkscn4mvl2.apps.googleusercontent.com';
+     console.log("read");      
+     var CLIENT_ID = '496411288280-5k6m4o36m693kfir0i8q9phkscn4mvl2.apps.googleusercontent.com';
       var API_KEY = 'AIzaSyCuFDfeNPqYNIdZUK5HC19jll5E_OUl_t4';
 
       // Array of API discovery doc URLs for APIs used by the quickstart
@@ -61,7 +62,7 @@
        *  Sign in the user upon button click.
        */
       function handleAuthClick(event) {
-        gapi.auth2.getAuthInstance().signIn();
+      console.log("auth");  gapi.auth2.getAuthInstance().signIn();
       }
 
       /**

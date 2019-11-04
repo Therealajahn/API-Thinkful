@@ -7,9 +7,9 @@ function renderSections(){
     
         
         $("body").append(`<section class=${section}> 
-                            ${renderParts(section,index)}
-                         </section>`);
-        console.log(renderParts(section,index))
+        </section>`);
+        renderParts(section,index);
+        
     });
 
 };
@@ -17,7 +17,8 @@ function renderSections(){
 function renderParts(section, index) {
     console.log("renderparts",section,index)
     store.partBoxes[index].forEach(part => {
-    return (`<section class="part ${part}">
+        console.log("part-loop");
+    $(`.${section}`).append(`<section class="part ${part}">
             <div class="check ${part}">
                 <div class="x-rect1 ${part}"></div>
                 <div class="x-rect2 ${part}"></div>
@@ -45,6 +46,7 @@ function renderParts(section, index) {
             </form>
             <div class="stars ${part}"></div>
         </section>`)
+        
     });
 }
 

@@ -1,0 +1,134 @@
+/*SECTIONS*/
+.part-section-a, 
+.part-section-b,
+.part-section-c{
+    width: 95vw;
+    height: 200px;
+    background-color: #ebebeb;
+    margin-bottom: -50px;
+}
+/*PARTS*/
+.part.one{
+    position:absolute;
+    width: 30vw;
+    height: 130px;
+    background-color: #333333;
+    margin-top:3.5vh;
+}
+
+.part.two{
+    position:absolute;
+    width: 30vw;
+    height: 130px;
+    background-color: #333333;
+    margin-top:3.5vh;
+    margin-left: 32.5vw;
+}
+
+.part.three{
+    position:absolute;
+    width: 30vw;
+    height: 130px;
+    background-color: #333333;
+    margin-top:3.5vh;
+    margin-left: 65vw;
+}
+
+/*CHECK*/
+.check{
+    position: absolute;
+    width: 4vw;
+    height: 30px;
+    background-color: #6b6b6b;
+    margin-bottom: 5vh;
+}
+.x-rect1{
+    position:absolute;
+    width: 20px;
+    height: 5px;
+    background-color: white;
+    transform: rotate(45deg);
+    margin-top: 12px;
+    margin-left: 2px;
+}
+.x-rect2{
+    position:absolute;
+    width: 20px;
+    height: 5px;
+    background-color: white;
+    transform: rotate(-45deg);
+    margin-top: 12px;
+    margin-left: 2px;
+}
+
+
+.delete{
+    position: absolute;
+    width: 26vw;
+    height: 30px;
+    margin-left: 4vw;
+    background-color: #8c8c8c;
+    margin-bottom: -5vh;
+}
+
+.delete-text{
+    position: absolute;
+    margin-left: 10vw;
+    margin-top: 5px; 
+}
+/*SUBMIT*/
+.submit-right{
+    position: absolute;
+    height:68px;
+    width:2.5vw;
+    background-color: #d1d1d1;
+    margin-top: 33px;
+    margin-left: 27.45vw;
+}
+.submit-left{
+    position: absolute;
+    height:68px;
+    width:2.5vw;
+    background-color: #d1d1d1;
+    margin-top: 33px;
+    margin-left: vw;
+}
+.submit-left-text{
+    position: absolute;
+    transform: rotate(90deg);
+    margin-left:-20px;
+}
+.submit-right-text{
+    position: absolute;
+    transform: rotate(90deg);
+    margin-left:-20px;
+}
+.submit-left:hover, .submit-right:hover{
+    background-color: #333333;
+    cursor: pointer;
+}
+/*INPUTS*/
+.inputs{
+    margin-top: 20px;
+}
+.name{
+    width: 24vw;
+    margin-top: 32px;
+    margin-left: 2.6vw;
+}
+.price{
+    width: 24vw;
+    margin-top: 3px;
+    margin-left: 2.6vw;
+}
+.link{
+    width: 24vw;
+    margin-top: 3px;
+    margin-left: 2.6vw;
+}
+.stars{
+    width: 30vw;
+    height: 30px;
+    background-color:#8c8c8c;
+    margin-top: 3px;
+}

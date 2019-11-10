@@ -1,0 +1,3 @@
+let STORE = {
+    scroll:null,
+}

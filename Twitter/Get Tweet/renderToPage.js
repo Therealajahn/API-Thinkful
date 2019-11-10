@@ -1,13 +1,11 @@
 //get reply from api-call
 //render to page
 function renderTweet(reply) {
-  let tweet = reply.statuses[0].text;
-    $("body").append(
-     `<p>${tweet}</p>`
-    )
+  return reply.statuses[0].text;
 };
 
-function renderLanding() {
+function renderLanding(shortStory,explanation) {
+    console.log("renderLanding")  
     return(
     `<section class="js-landing-page landing-page">
         
@@ -19,14 +17,27 @@ function renderLanding() {
 
            <button class="js-start start">Start<button
 
-    </section>`)
+    </section>`
+    handleLandingStart();
+    )
 }
 
 function handleLandingStart() {
+    console.log("handleLanding Start");
     $(".js-landing-page").on("submit",(e) => {
         e.preventDefault();
         scrollWindow();
-        STORE.scroll += window.innerHeight; 
+        
     })
+}
+
+function scrollWindow(){
+    console.log("scrollWindow");
+   STORE.scroll += window.innerHeight; 
+   window.scroll({
+       top:STORE.scroll,
+       left:0,
+       behavior:"smooth"
+   })    
 }
 

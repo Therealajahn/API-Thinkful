@@ -1,24 +1,50 @@
 //get reply from api-call
 //render to page
-function renderTweet(reply) {
-  return reply.statuses[0].text;
+function getTweet() {
+  console.log("getTweet");
+  return STORE.reply
 };
 
-function renderLanding(shortStory,explanation) {
-    console.log("renderLanding")  
+function twitterLoaded() {
+    $(renderPage());
+    console.log(STORE.reply)
+};
+
+
+function renderPage() {
+    
+    
+    
+    $("body").append(
+    `${renderLanding()}
+    <div class='yes'></div>
+    ` 
+
+    );
+    handleLandingStart();
+}
+
+function renderLanding() {
+    console.log("renderLanding") 
+    let shortStory = getTweet();
+    let explanation = STORE.explanation;
+    let userName = STORE.user;
+    console.log(userName);
     return(
     `<section class="js-landing-page landing-page">
-        
+       <form> 
            <p class="js-short-story short-story">
            ${shortStory}</p>
 
+           <p class="js-user-name user-name">
+           ${userName}</p>
+
            <p class="js-explantion explanation">
-           ${explantion}</p>
+           ${explanation}</p>
 
-           <button class="js-start start">Start<button
-
+           <button class="js-start start">Start</button>
+       </form>
     </section>`
-    handleLandingStart();
     )
 }
 
@@ -40,4 +66,6 @@ function scrollWindow(){
        behavior:"smooth"
    })    
 }
+
+
 
